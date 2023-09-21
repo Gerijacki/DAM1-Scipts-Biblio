@@ -14,4 +14,3 @@ Algoritmo _05_CalcularHipotenusa
 	hipotenusa <- rc (hipotenusa);
 	Escribir "Aquesta es la hipotenusa;",hipotenusa;
 FinAlgoritmo
-
