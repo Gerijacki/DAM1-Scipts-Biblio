@@ -22,6 +22,10 @@ docker run nombre_de_la_imagen
 ```bash
 docker ps
 ```
+## Listar contenedores en posesion
+```bash
+docker ps -a
+```
 ## Detener un contenedor en ejecución
 ```bash
 docker stop ID_del_contenedor
@@ -34,3 +38,18 @@ docker rm ID_del_contenedor
 ```bash
 docker rmi nombre_de_la_imagen
 ```
+## Parar todas las imagenes y borrar
+```bash
+docker ps -aq
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+```
+## Entrar dentro de un contenedor
+```bash
+docker exec -it loriz-la-meva-app sh
+```
+## Crear una imatge
+```bash
+docker build -t "nom-imatge" "path"
+```
+
